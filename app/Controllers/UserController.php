@@ -10,18 +10,14 @@ use App\Models\User;
 
 class UserController{
     protected $container;
-    public function __construct($container)
-    {
+    public function __construct($container){
         $this->container = $container;
     }
     // index por convenção de laravel...
     public function index($request, $response, $args){
         //where (search)
-        // limit
-
-        // return 'users';
         // $results = Capsule::table('users')->get();
-        $results = User::all();
+        $results = User::all()->take(10);
         return $response->withJson($results, 200);
     }
     public function show($request, $response, $args){
@@ -37,11 +33,13 @@ class UserController{
     public function update($request, $response, $args){
         //ir buscar ao body do pedido a info do novo utilizador
         $user = User::find($args['id']);
-        $user->name = 'boB Construtor';
+        $data = $request->getParsedBody();
+        $user->name = $data['name'];
         $user->save();
         return $response->withJson($user, 200);
     }
     public function destroy($request, $response, $args){
+        // funciona mas com erro
         $result = (bool)User::destroy($args['id']);
         return $result->withJson($result, $result ? 200 : 400);
     }
