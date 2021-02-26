@@ -7,4 +7,5 @@ class User extends Model{
     protected $table = 'users';
     protected $fillable = ['name', 'email', 'password'];
     public $timestamps = false;
+    protected $hidden = ['password'];//esconde a password
 }

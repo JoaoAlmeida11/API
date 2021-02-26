@@ -31,6 +31,9 @@ $capsule->bootEloquent();
 $container['UserController'] = function ($container) {
     return new \App\Controllers\UserController($container);
 };
+// $container['validator'] = function($container){
+//     return new App\Validation\Validator;
+// };
 
 
 require __DIR__ . '/../app/route.php';

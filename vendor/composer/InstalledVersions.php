@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '879bed2ccd688a7cd4f06a54bf82e754265b2f62',
+    'reference' => '880b431938d23cc958685141500e5a402c7be204',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '879bed2ccd688a7cd4f06a54bf82e754265b2f62',
+      'reference' => '880b431938d23cc958685141500e5a402c7be204',
     ),
     'doctrine/inflector' => 
     array (
@@ -182,6 +182,24 @@ private static $installed = array (
       ),
       'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
     ),
+    'respect/stringifier' => 
+    array (
+      'pretty_version' => '0.2.0',
+      'version' => '0.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e55af3c8aeaeaa2abb5fa47a58a8e9688cc23b59',
+    ),
+    'respect/validation' => 
+    array (
+      'pretty_version' => '2.2.1',
+      'version' => '2.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '51ad23e24c83f222468174861de61fc8bcde9bfb',
+    ),
     'slim/slim' => 
     array (
       'pretty_version' => '3.12.3',
@@ -190,6 +208,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '1c9318a84ffb890900901136d620b4f03a59da38',
+    ),
+    'sokil/php-isocodes' => 
+    array (
+      'pretty_version' => '3.3.4',
+      'version' => '3.3.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8872d0d2a9289e132c386a6cf6c8f97399f75dbe',
     ),
     'symfony/console' => 
     array (
